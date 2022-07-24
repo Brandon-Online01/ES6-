@@ -9,4 +9,96 @@
 <body>
     <p>Check the console</p>
 </body>
+    <script type="text/javascript">
+        const companies = [
+            {name: 'Google', category: 'Technology', start: 1981, employees: 120000, location: 'USA'},
+            {name: 'Amazon', category: 'Delivery', start: 1981, employees: 123000, location: 'USA'},
+            {name: 'Facebook', category: 'Technology', start: 2000, employees: 232610, location: 'USA'},
+            {name: 'Eskom', category: 'Energy', start: 1950, employees: 14560, location: 'South Africa'},
+            {name: 'Econet', category: 'Technology', start: 1999, employees: 463640, location: 'Zimbabwe'},
+            {name: 'NZR', category: 'Railways', start: 1951, employees: 120, location: 'Zimbabwe'},
+            {name: 'Yoco', category: 'FinTech', start: 2010, employees: 466839, location: 'South Africa'},
+            {name: 'Asus', category: 'Computer Hardware', start: 2000, employees: 9764973, location: 'USA'},
+        ];
+
+        // list all the same category 
+
+        // list all the same country
+
+        // list all with over 250 000 employees
+
+        // list all that started before 1980
+
+        // add new company to last place in the list 
+
+        // add new company to first place in the list 
+
+        // remove first company
+
+        // remove last company 
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        const ages = [23, 45, 14, 56, 56, 87, 45, 34, 23, 16, 9, 34, 45, 43, 23, 46, 38, 39, 56, 10, 13, 15];
+
+        //total number of ages collected
+        const totalAges = ages.length;
+        // console.log(`We have a total of ${totalAges} ages`);
+
+        //remove duplicates ages
+        const sortedAges = new Set (ages);
+        // console.log(sortedAges);
+
+        // show those number of those above 18 as canDrink
+        const canDrink = ages.filter( age => age > 18).length
+        // console.log(`${canDrink} can drink out of the total ${totalAges} people`);
+
+        // arrange in ascending order 
+        const ascendingOrder = ages.sort((a, b) => a - b);
+        // console.log(ascendingOrder);
+
+        // arrange in descending order
+        const descendingOrder = ages.sort((a, b) => b - a);
+        // console.log(descendingOrder); 
+
+        // count those above 30 => working
+                const working = ages.filter( age => age >= 30 && age <= 50).length;
+        // console.log(`We have ${working} people working`);
+
+        // count those above 50 => retiring
+        const retiring = ages.filter(age => age >= 50 && age <= 65 ).length
+        // console.log(`We have ${retiring} people about to retire`);
+
+        // count those above 65 => retired
+        const retired = ages.filter(age => age > 65).length
+        // console.log(`We have ${retired} person`);
+
+        // add total ages 
+        const sumOfAges = ages.reduce((a, b) => a + b, 0)
+        // console.log(`The sum of the ages ot the people is ${sumOfAges}`);
+        
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        let fruits = ['apples', 'bananas', 'oranges', 'mangoes', 'grapefruits']
+
+        //sort
+        const sortedFruits = fruits.sort()
+        // console.log(sortedFruits);
+
+        // add guavas to the end 
+        const withGauvas = [...fruits, 'gauvas']
+        // console.log(withGauvas);
+
+        // add peaches to the start 
+        const withPeaches = ['peaches', ...withGauvas]
+        // console.log(withPeaches);
+
+        // remove first fruit 
+        const withoutFirst = fruits.shift()
+        // console.log(`${withoutFirst} removed `);
+
+        // remove last fruit 
+        const withoutLast = fruits.pop()
+        // console.log(`${withoutLast} removed `);
+
+    </script>
 </html>
